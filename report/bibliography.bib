@@ -1,0 +1,337 @@
+@misc{freudenthaler_bayesian_2011,
+    title = {Bayesian {{Factorization Machines}}},
+    author = {Freudenthaler, Christoph and Schmidt-thieme, Lars and Rendle, Steffen},
+    date = {2011},
+    abstract = {This work presents simple and fast structured Bayesian learning for matrix and tensor factorization models. An unblocked Gibbs sampler is proposed for factorization machines (FM) which are a general class of latent variable models subsuming matrix, tensor and many other factorization models. We empirically show on the large Netflix challenge dataset that Bayesian FM are fast, scalable and more accurate than state-of-the-art factorization models. 1},
+    file = {/home/rafael/Zotero/storage/E7PRI6DB/Freudenthaler et al. - Bayesian Factorization Machines.pdf;/home/rafael/Zotero/storage/K69Z32EF/summary.html}
+}
+
+@article{koren_collaborative_2009,
+    title = {Collaborative {{Filtering}} with {{Temporal Dynamics}}},
+    author = {Koren, Yehuda},
+    pages = {9},
+    date = {2009},
+    abstract = {Customer preferences for products are drifting over time. Product perception and popularity are constantly changing as new selection emerges. Similarly, customer inclinations are evolving, leading them to ever redefine their taste. Thus, modeling temporal dynamics should be a key when designing recommender systems or general customer preference models. However, this raises unique challenges. Within the eco-system intersecting multiple products and customers, many different characteristics are shifting simultaneously, while many of them influence each other and often those shifts are delicate and associated with a few data instances. This distinguishes the problem from concept drift explorations, where mostly a single concept is tracked. Classical time-window or instancedecay approaches cannot work, as they lose too much signal when discarding data instances. A more sensitive approach is required, which can make better distinctions between transient effects and long term patterns. The paradigm we offer is creating a model tracking the time changing behavior throughout the life span of the data. This allows us to exploit the relevant components of all data instances, while discarding only what is modeled as being irrelevant. Accordingly, we revamp two leading collaborative filtering recommendation approaches. Evaluation is made on a large movie rating dataset by Netflix. Results are encouraging and better than those previously reported on this dataset.},
+    file = {/home/rafael/Zotero/storage/FIP957SU/Koren - Collaborative Filtering with Temporal Dynamics.pdf},
+    langid = {english}
+}
+
+@misc{noauthor_papers_nodate,
+	title = {Papers with {Code} - {MovieLens} {1M} {Benchmark} ({Recommendation} {Systems})},
+	url = {https://paperswithcode.com/sota/collaborative-filtering-on-movielens-1m},
+	abstract = {The current state-of-the-art on MovieLens 1M is Sparse FC. See a full comparison of 18 papers with code.},
+	language = {en},
+	urldate = {2021-07-31},
+	file = {Snapshot:/home/rafael/Zotero/storage/XZ356PUU/collaborative-filtering-on-movielens-1m.html:text/html},
+}
+
+@article{6165290,
+    author = {Wang, Yu-Xiong and Zhang, Yu-Jin},
+    journal = {IEEE Transactions on Knowledge and Data Engineering},
+    title = {Nonnegative Matrix Factorization: A Comprehensive Review},
+    year = {2013},
+    volume = {25},
+    number = {6},
+    pages = {1336-1353},
+    doi = {10.1109/TKDE.2012.51} }
+
+
+@inproceedings{lee_improving_2017,
+    title = {Improving {{Jaccard Index}} for {{Measuring Similarity}} in {{Collaborative Filtering}}},
+    author = {Lee, Soojung},
+    date = {2017-03-18},
+    pages = {799--806},
+    doi = {10.1007/978-981-10-4154-9_93},
+    abstract = {In collaborative filtering-based recommender systems, items are recommended by consulting ratings of similar users. However, if the number of ratings to compute similarity is not sufficient, the system may produce unreliable recommendations. Since this data sparsity problem is critical in collaborative filtering, many researchers have made efforts to develop new similarity metrics taking care of this problem. Jaccard index has also been a useful tool when combined with existing similarity measures to handle data sparsity problem. This paper proposes a novel improvement of Jaccard index that reflects the frequency of ratings assigned by users as well as the number of items co-rated by users. Performance of the proposed index is evaluated through extensive experiments to find that the proposed significantly outperforms Jaccard index especially in a dense dataset and that its combination with a previous similarity measure is superior to existing measures in terms of both prediction and recommendation qualities.},
+    file = {/home/rafael/Zotero/storage/QRITN8UG/Lee - 2017 - Improving Jaccard Index for Measuring Similarity i.pdf},
+    isbn = {978-981-10-4153-2}
+}
+
+@article{rendle_difficulty_2019,
+    title = {On the {{Difficulty}} of {{Evaluating Baselines}} : {{A Study}} on {{Recommender Systems}}},
+    shorttitle = {On the {{Difficulty}} of {{Evaluating Baselines}}},
+    author = {Rendle, Steffen and Zhang, Li and Koren, Yehuda},
+    date = {2019-05-03},
+    url = {http://arxiv.org/abs/1905.01395},
+    urldate = {2021-07-25},
+    abstract = {Numerical evaluations with comparisons to baselines play a central role when judging research in recommender systems. In this paper, we show that running baselines properly is difficult. We demonstrate this issue on two extensively studied datasets. First, we show that results for baselines that have been used in numerous publications over the past five years for the Movielens 10M benchmark are suboptimal. With a careful setup of a vanilla matrix factorization baseline, we are not only able to improve upon the reported results for this baseline but even outperform the reported results of any newly proposed method. Secondly, we recap the tremendous effort that was required by the community to obtain high quality results for simple methods on the Netflix Prize. Our results indicate that empirical findings in research papers are questionable unless they were obtained on standardized benchmarks where baselines have been tuned extensively by the research community.},
+    archivePrefix = {arXiv},
+    eprint = {1905.01395},
+    eprinttype = {arxiv},
+    file = {/home/rafael/Zotero/storage/4QYHBZLQ/Rendle et al. - 2019 - On the Difficulty of Evaluating Baselines A Study.pdf},
+    keywords = {Computer Science - Information Retrieval,Computer Science - Machine Learning},
+    langid = {english},
+    primaryClass = {cs}
+}
+
+@inproceedings{rendle_factorization_2010,
+    title = {Factorization {{Machines}}},
+    booktitle = {2010 {{IEEE International Conference}} on {{Data Mining}}},
+    author = {Rendle, Steffen},
+    date = {2010-12},
+    pages = {995--1000},
+    issn = {2374-8486},
+    doi = {10.1109/ICDM.2010.127},
+    abstract = {In this paper, we introduce Factorization Machines (FM) which are a new model class that combines the advantages of Support Vector Machines (SVM) with factorization models. Like SVMs, FMs are a general predictor working with any real valued feature vector. In contrast to SVMs, FMs model all interactions between variables using factorized parameters. Thus they are able to estimate interactions even in problems with huge sparsity (like recommender systems) where SVMs fail. We show that the model equation of FMs can be calculated in linear time and thus FMs can be optimized directly. So unlike nonlinear SVMs, a transformation in the dual form is not necessary and the model parameters can be estimated directly without the need of any support vector in the solution. We show the relationship to SVMs and the advantages of FMs for parameter estimation in sparse settings. On the other hand there are many different factorization models like matrix factorization, parallel factor analysis or specialized models like SVD++, PITF or FPMC. The drawback of these models is that they are not applicable for general prediction tasks but work only with special input data. Furthermore their model equations and optimization algorithms are derived individually for each task. We show that FMs can mimic these models just by specifying the input data (i.e. the feature vectors). This makes FMs easily applicable even for users without expert knowledge in factorization models.},
+    eventtitle = {2010 {{IEEE International Conference}} on {{Data Mining}}},
+    file = {/home/rafael/Zotero/storage/SWVGJCUU/Rendle - 2010 - Factorization Machines.pdf},
+    keywords = {Computational modeling,Data models,Equations,factorization machine,Frequency modulation,Mathematical model,Predictive models,sparse data,support vector machine,Support vector machines,tensor factorization}
+}
+
+@article{rendle_scaling_2013,
+    title = {Scaling Factorization Machines to Relational Data},
+    author = {Rendle, Steffen},
+    date = {2013-03},
+    journaltitle = {Proceedings of the VLDB Endowment},
+    shortjournal = {Proc. VLDB Endow.},
+    volume = {6},
+    pages = {337--348},
+    issn = {2150-8097},
+    doi = {10.14778/2535573.2488340},
+    url = {https://dl.acm.org/doi/10.14778/2535573.2488340},
+    urldate = {2021-07-25},
+    abstract = {The most common approach in predictive modeling is to describe cases with feature vectors (aka design matrix). Many machine learning methods such as linear regression or support vector machines rely on this representation. However, when the underlying data has strong relational patterns, especially relations with high cardinality, the design matrix can get very large which can make learning and prediction slow or even infeasible.},
+    file = {/home/rafael/Zotero/storage/CD59HCYY/Rendle - 2013 - Scaling factorization machines to relational data.pdf},
+    langid = {english},
+    number = {5}
+}
+
+@inproceedings{salakhutdinov_bayesian_2008,
+    title = {Bayesian Probabilistic Matrix Factorization Using {{Markov}} Chain {{Monte Carlo}}},
+    booktitle = {Proceedings of the 25th International Conference on {{Machine}} Learning - {{ICML}} '08},
+    author = {Salakhutdinov, Ruslan and Mnih, Andriy},
+    date = {2008},
+    pages = {880--887},
+    publisher = {{ACM Press}},
+    location = {{Helsinki, Finland}},
+    doi = {10.1145/1390156.1390267},
+    url = {http://portal.acm.org/citation.cfm?doid=1390156.1390267},
+    urldate = {2021-07-25},
+    abstract = {Low-rank matrix approximation methods provide one of the simplest and most effective approaches to collaborative filtering. Such models are usually fitted to data by finding a MAP estimate of the model parameters, a procedure that can be performed efficiently even on very large datasets. However, unless the regularization parameters are tuned carefully, this approach is prone to overfitting because it finds a single point estimate of the parameters. In this paper we present a fully Bayesian treatment of the Probabilistic Matrix Factorization (PMF) model in which model capacity is controlled automatically by integrating over all model parameters and hyperparameters. We show that Bayesian PMF models can be efficiently trained using Markov chain Monte Carlo methods by applying them to the Netflix dataset, which consists of over 100 million movie ratings. The resulting models achieve significantly higher prediction accuracy than PMF models trained using MAP estimation.},
+    eventtitle = {The 25th International Conference},
+    file = {/home/rafael/Zotero/storage/HHEUYTAC/Salakhutdinov and Mnih - 2008 - Bayesian probabilistic matrix factorization using .pdf},
+    isbn = {978-1-60558-205-4},
+    langid = {english}
+}
+
+@article{koren_factorization_2008,
+    title = {Factorization Meets the Neighborhood: a Multifaceted Collaborative Filtering Model},
+    abstract = {Recommender systems provide users with personalized suggestions for products or services. These systems often rely on Collaborating Filtering ( {CF} ), where past transactions are analyzed in order to establish connections between users and products. The two more successful approaches to {CF} are latent factor models, which directly proﬁle both users and products, and neighborhood models, which analyze similarities between products or users. In this work we introduce some innovations to both approaches. The factor and neighborhood models can now be smoothly merged, thereby building a more accurate combined model. Further accuracy improvements are achieved by extending the models to exploit both explicit and implicit feedback by the users. The methods are tested on the Netﬂix data. Results are better than those previously published on that dataset. In addition, we suggest a new evaluation metric, which highlights the differences among methods, based on their performance at a top-K recommendation task.},
+    pages = {9},
+    date = {2008},
+    author = {Koren, Yehuda},
+    langid = {english},
+    file = {Koren - Factorization Meets the Neighborhood a Multifacet.pdf:/home/rafael/Zotero/storage/6BMWU7DF/Koren - Factorization Meets the Neighborhood a Multifacet.pdf:application/pdf}
+}
+
+@book{Goodfellow-et-al-2016,
+    title = {Deep Learning},
+    author = {Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher = {MIT Press},
+    note = {\url {http://www.deeplearningbook.org}},
+    year = {2016}
+}
+
+
+@misc{noauthor_myfm_nodate,
+    title = {{myFM} - {Bayesian} {Factorization} {Machines} in {Python} / {C} ++},
+    url = {https://myfm.readthedocs.io/en/latest/},
+    urldate = {2021-07-26},
+    file = {myFM - Bayesian Factorization Machines in Python/C++ — myFM 0.2.1 documentation:/home/rafael/Zotero/storage/NBMPHM5B/latest.html:text/html},
+}
+
+@article{DBLP:journals/corr/abs-1708-05031,
+    author = {Xiangnan He and
+ Lizi Liao and
+ Hanwang Zhang and
+ Liqiang Nie and
+ Xia Hu and
+ Tat {-} Seng Chua},
+    title = {Neural Collaborative Filtering},
+    journal = {CoRR},
+    volume = {abs/1708.05031},
+    year = {2017},
+    url = {http://arxiv.org/abs/1708.05031},
+    archivePrefix = {arXiv},
+    eprint = {1708.05031},
+    timestamp = {Mon, 13 Aug 2018 16:49:05 +0200},
+    biburl = {https://dblp.org/rec/journals/corr/abs-1708-05031.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{inproceedings,
+    author = {Sedhain, Suvash and Menon, Aditya and Sanner, Scott and Xie, Lexing},
+    year = {2015},
+    month = {05},
+    pages = {111-112},
+    title = {AutoRec: Autoencoders Meet Collaborative Filtering},
+    doi = {10.1145/2740908.2742726}
+}
+@misc{Netflix,
+    title = {Netflix Prize},
+    year = {2010},
+    howpublished = {\url {https://www.netflixprize.com/leaderboard.html}},
+    urldate = {2021-07-28}
+}
+
+@article{Movielens,
+    author = {Harper, F. Maxwell and Konstan, Joseph A.},
+    title = {The MovieLens Datasets: History and Context},
+    year = {2015},
+    issue_date = {January 2016},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {5},
+    number = {4},
+    issn = {2160-6455},
+    url = {https://doi.org/10.1145/2827872},
+    doi = {10.1145/2827872},
+    abstract = {The MovieLens datasets are widely used in education, research, and industry. They
+are downloaded hundreds of thousands of times each year, reflecting their use in popular
+press programming books, traditional and online courses, and software. These datasets
+are a product of member activity in the MovieLens movie recommendation system, an
+active research platform that has hosted many experiments since its launch in 1997.
+This article documents the history of MovieLens and the MovieLens datasets. We include
+a discussion of lessons learned from running a long-standing, live research platform
+from the perspective of a research organization. We document best practices and limitations
+of using the MovieLens datasets in new research.},
+    journal = {ACM Trans. Interact. Intell. Syst.},
+    month = dec,
+    articleno = {19},
+    numpages = {19},
+    keywords = {MovieLens, Datasets, ratings, recommendations}
+}
+
+@inproceedings{CF_survey,
+    author = {Ruisheng Zhang and
+ Qi {-} dong Liu and
+ Chun Gui and
+ Jiaxuan Wei and
+ Huiyi Ma},
+    title = {Collaborative Filtering for Recommender Systems},
+    booktitle = {Second International Conference on Advanced Cloud and Big Data, {CBD}
+    2014, Huangshan, China, November 20-22, 2014},
+    pages = {301--308},
+    publisher = {{IEEE} Computer Society},
+    year = {2014},
+    url = {https://doi.org/10.1109/CBD.2014.47},
+    doi = {10.1109/CBD.2014.47},
+    timestamp = {Wed, 16 Oct 2019 14:14:54 +0200},
+    biburl = {https://dblp.org/rec/conf/cbd/ZhangLGWM14.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{svd,
+    author = {Klema, V. and Laub, A.},
+    journal = {IEEE Transactions on Automatic Control},
+    title = {The singular value decomposition: Its computation and some applications},
+    year = {1980},
+    volume = {25},
+    number = {2},
+    pages = {164-176},
+    doi = {10.1109/TAC.1980.1102314}
+}
+
+@article{ngcf,
+    author = {Xiang Wang and
+ Xiangnan He and
+ Meng Wang and
+ Fuli Feng and
+ Tat {-} Seng Chua},
+    title = {Neural Graph Collaborative Filtering},
+    journal = {CoRR},
+    volume = {abs/1905.08108},
+    year = {2019},
+    url = {http://arxiv.org/abs/1905.08108},
+    archivePrefix = {arXiv},
+    eprint = {1905.08108},
+    timestamp = {Mon, 31 Aug 2020 18:56:15 +0200},
+    biburl = {https://dblp.org/rec/journals/corr/abs-1905-08108.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{als,
+    author = {Yehuda Koren and
+ Robert M. Bell and
+ Chris Volinsky},
+    title = {Matrix Factorization Techniques for Recommender Systems},
+    journal = {Computer},
+    volume = {42},
+    number = {8},
+    pages = {30--37},
+    year = {2009},
+    url = {https://doi.org/10.1109/MC.2009.263},
+    doi = {10.1109/MC.2009.263},
+    timestamp = {Wed, 12 Aug 2020 10:29:35 +0200},
+    biburl = {https://dblp.org/rec/journals/computer/KorenBV09.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{gnn_survey,
+    author = {Shiwen Wu and
+ Wentao Zhang and
+ Fei Sun and
+ Bin Cui},
+    title = {Graph Neural Networks in Recommender Systems: {A} Survey},
+    journal = {CoRR},
+    volume = {abs/2011.02260},
+    year = {2020},
+    url = {https://arxiv.org/abs/2011.02260},
+    archivePrefix = {arXiv},
+    eprint = {2011.02260},
+    timestamp = {Fri, 06 Nov 2020 15:32:47 +0100},
+    biburl = {https://dblp.org/rec/journals/corr/abs-2011-02260.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{pmlr-v80-muller18a,
+    title = {Kernelized Synaptic Weight Matrices},
+    author = {Muller, Lorenz and Martel, Julien and Indiveri, Giacomo},
+    booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+    pages = {3654--3663},
+    year = {2018},
+    editor = {Dy, Jennifer and Krause, Andreas},
+    volume = {80},
+    series = {Proceedings of Machine Learning Research},
+    month = {10--15 Jul},
+    publisher = {PMLR},
+    pdf = {http://proceedings.mlr.press/v80/muller18a/muller18a.pdf},
+    url = {http://proceedings.mlr.press/v80/muller18a.html},
+    abstract = {In this paper we introduce a novel neural network architecture, in which weight matrices are re-parametrized in terms of low-dimensional vectors, interacting through kernel functions. A layer of our network can be interpreted as introducing a (potentially infinitely wide) linear layer between input and output. We describe the theory underpinning this model and validate it with concrete examples, exploring how it can be used to impose structure on neural networks in diverse applications ranging from data visualization to recommender systems. We achieve state-of-the-art performance in a collaborative filtering task (MovieLens).}
+}
+
+@misc{kernelNetGithub,
+    author = {Muller, Lorenz},
+    title = {kernelNet MovieLens-1M},
+    year = {2019},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url {https://github.com/lorenzMuller/kernelNet_MovieLens}},
+    commit = {f4d14d5c4b2afbe1b7f61ca96ff2a2e3e28c9787}
+}
+
+@Article{Eckart1936,
+author={Eckart, Carl
+and Young, Gale},
+title={The approximation of one matrix by another of lower rank},
+journal={Psychometrika},
+year={1936},
+month={Sep},
+day={01},
+volume={1},
+number={3},
+pages={211-218},
+abstract={The mathematical problem of approximating one matrix by another of lower rank is closely related to the fundamental postulate of factor-theory. When formulated as a least-squares problem, the normal equations cannot be immediately written down, since the elements of the approximate matrix are not independent of one another. The solution of the problem is simplified by first expressing the matrices in a canonic form. It is found that the problem always has a solution which is usually unique. Several conclusions can be drawn from the form of this solution.},
+issn={1860-0980},
+doi={10.1007/BF02288367},
+url={https://doi.org/10.1007/BF02288367}
+}
+
+@misc{gillis2014nonnegative,
+      title={The Why and How of Nonnegative Matrix Factorization}, 
+      author={Nicolas Gillis},
+      year={2014},
+      eprint={1401.5226},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
